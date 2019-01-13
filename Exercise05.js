@@ -1,6 +1,16 @@
+/*
+Problem
+
+Diberikan sebuah function palindrome(kata) yang menerima satu parameter. 
+Function tersebut akan mengembalikan nilai true jika kata merupakan palindrome, 
+dan false jika bukan. Kata palindrome adalah sebuah kata yang jika dibalik, tetap sama. 
+Contoh, 'katak' dibalik tetaplah 'katak'.
+*/
+
 function palindrome(kata) {
 
     for (var i = 0; i < kata.length / 2; i++) {
+        //READ FROM LEFT++ AND RIGTH--
         if (kata[i] !== kata[kata.length - 1 - i]) {
             return false;
         }

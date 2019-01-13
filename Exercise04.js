@@ -1,3 +1,17 @@
+/*
+//contoh output
+["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]  
+
+    =>Buatlah sebuah function dengan nama dataHandling2 yang akan 
+      menerima input array seperti di atas.
+
+    =>Gunakan fungsi splice untuk memodifikasi variabel tersebut 
+    agar menjadi seperti array dibawah. Lalu console.log array yang baru seperti di bawah.
+
+["0001", "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", 
+"Pria", "SMA Internasional Metro"] 
+*/
+
 function dataHandling2() {
     var arr = ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]
     arr.splice(1, 2, 'Elsharawy Roman Alamsyah', 'Provinsi Bandar Lampung')

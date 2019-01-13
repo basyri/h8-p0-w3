@@ -7,7 +7,7 @@ function cariMean(arr) {
     }
 
     meanNum = sum / arr.length
-    return meanNum.toFixed(0)
+    return Number(meanNum.toFixed(0))
 }
 
 // TEST CASES

@@ -17,8 +17,18 @@ function groupAnimals(animals) {
     var zoo = [];
     var index = 0
 
-    animals.sort()
+    // animals.sort()
+
+    // console.log(animals[0] < animals[1])
+
     for (var i = 0; i < animals.length; i++) {
+        for (var j = i + 1; j < animals.length; j++) {
+            if (animals[i] > animals[j]) {
+                var temp = animals[i]
+                animals[i] = animals[j]
+                animals[j] = temp
+            }
+        }
 
         if (zoo.length === 0) {
             zoo.push([animals[i]]);
